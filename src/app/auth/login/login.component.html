@@ -1,0 +1,41 @@
+<div class="container">
+    <!-- <div class="spinner-box" *ngIf="requestProcess">
+        <mat-spinner class="spinner"></mat-spinner>
+    </div> -->
+    <div class="login-box">
+        <h1 style="color: black;">Login Form</h1>
+        <form name="form" #login="ngForm" (ngSubmit)="login.form.valid && onSubmit()">
+            <div class="input-box">
+                <input type="email" placeholder="Email" #email="ngModel" name="email" [(ngModel)]="LoginForm.email"
+                    email required>
+                <div *ngIf="login.submitted && email.invalid" class="invalid">
+                    <div *ngIf="email.errors.required">
+                        Email is required
+                    </div>
+                    <div *ngIf="email.errors.email">Email must be valid email address</div>
+                </div>
+            </div>
+            <br>
+            <div class="input-box">
+                <input [type]="passwordType" placeholder="Password" #password="ngModel" name="password"
+                    [(ngModel)]="LoginForm.password" required minlength="6">
+                <div *ngIf="login.submitted && password.invalid" class="invalid">
+                    <div *ngIf="password.errors.required">
+                        Password is required
+                    </div>
+                    <div *ngIf="password.errors.minlength">
+                        Password length must be Atleast 6
+                    </div>
+                </div>
+            </div>
+            <br>
+            <a [routerLink]="['/']" class="Login-link">Forgot Password</a><br>
+            <br>
+            <button type="submit" class="submit-button" [disabled]="requestProcess">Login</button>
+            <br>
+            <div class="text">
+                Have Account?<a [routerLink]="['/']">Register</a>
+            </div>
+        </form>
+    </div>
+</div>

@@ -1,0 +1,70 @@
+.invalid-feedback {
+  color: red;
+}
+.login-box {
+  display: flex;
+  border: 1px solid black;
+  align-items: center;
+  flex-wrap: wrap;
+  height: auto;
+  min-height: 300px;
+  justify-content: center;
+  width: 300px;
+  max-width: 100%;
+  margin: 100px;
+  padding: 50px 35px;
+  color: #fff;
+  border-radius: 15px;
+  margin-top: 30px;
+  padding-top: 60px;
+  padding-bottom: 10px;
+  right: 0;
+  margin-right: 50px;
+  position: fixed;
+}
+.input-box input {
+  background-color: #fff;
+  width: 250px;
+  padding: 0 25px;
+  border-radius: 10px;
+  font-size: 15px;
+  outline: none;
+  border: 1px solid black;
+  display: inline-block;
+  color: #020029;
+  line-height: 40px;
+}
+.submit-button {
+  font-weight: 400;
+  font-family: "poppins";
+  padding: 0 25px;
+  border-radius: 10px;
+  font-size: 16px;
+  outline: none;
+  border: none;
+  display: inline-block;
+  color: #020029;
+  height: 30px;
+  font-family: "poppins";
+  background-color: #063b80;
+  color: #fff;
+  font-size: 18px;
+  height: 40px;
+  width: 300px;
+  cursor: pointer;
+}
+.Login-link {
+  padding: 10px;
+  float: right;
+}
+.text {
+  padding: 20px;
+}
+
+.eyeicon {
+  color: rgb(78, 74, 74);
+  font-size: 22px;
+  padding: 10px;
+  margin-left: 200px;
+  margin-top: -43px;
+}
